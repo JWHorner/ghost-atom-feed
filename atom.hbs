@@ -17,6 +17,9 @@
 		<id>{{url absolute="true"}}</id>
         <published>{{published_at}}</published>
 		<updated>{{updated_at}}</updated>
+		{{#foreach tags}}
+		<category term="{{name}}"/>
+		{{/foreach}}
 		<summary>{{excerpt}}</summary>
         <content type="xhtml">
             <div xmlns="http://www.w3.org/1999/xhtml">
